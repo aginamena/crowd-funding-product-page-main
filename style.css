@@ -1,0 +1,432 @@
+*{
+  /* setting the default margin and padding to 0 and making te box-sizing
+  to border-box because we want to have a fixed width */
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Commissioner', sans-serif;
+  position: relative;
+
+
+}
+#content{
+  background: lightgrey;
+  position: relative;
+  height:1700px;
+}
+
+/* header styling */
+#heading{
+  background-image: url("images/image-hero-desktop.jpg");
+  height:350px;
+  padding-top:50px;
+}
+#about-link, #get-started-link, #discover-link{
+  color:white;
+}
+.navigation-link:hover{
+  border:1px solid white;
+  border-left:0;
+  border-right:0;
+  border-top:0;
+}
+
+/* bookmark syling */
+#bookmark{
+  background: lightgrey;
+  width: 160px;
+  border-radius: 50px;
+  /* float:right; */
+}
+#button-bookmark{
+  display: flex;
+  justify-content: space-between;
+}
+#back-this-project-button{
+  background:  hsl(176, 50%, 47%);
+  color:white;
+   /* we want to round the corners of the button */
+  border-radius: 50px;
+  width:174px;
+  height:50px;
+  border:0;
+}
+#items{
+  width:650px;
+  margin: 0 auto;
+  padding:50px;
+  background-color: white;
+  position: absolute;
+  top:-90px;
+  /* we want this div to be at the center at all times */
+  /* left: 25%;
+  right: 25%; */
+  left: 50%;
+  transform: translate(-50%, 0);;
+  border-radius: 10px;
+
+}
+#item-title{
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#item-description{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#icon_bookmark{
+  margin-right:10px;
+}
+#mastercraft-logo{
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#prices{
+  display: flex;
+  justify-content: space-between;
+}
+#price-section{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 200px;
+  background: white;
+  border-radius: 10px;
+  width: 650px;
+  padding: 50px;
+}
+.price{
+  font-weight: 700;
+  font-size: 30px;
+}
+.price-text{
+  font-size: 14px;
+}
+
+#bootstrap-progress-bar{
+  margin-top:40px;
+}
+.progress-bar{
+  background-color: hsl(176, 50%, 47%);
+}
+
+/* list of projects section */
+#projects{
+  width: 650px;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 27%;
+  padding:50px;
+}
+#about-this-project{
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+#list-of-features{
+  margin-top:20px;
+
+}
+.list-of-projects, .list-of-projects-grey{
+  border:1px solid lightgrey;
+  padding:30px;
+  margin-top:20px;
+}
+.list-of-projects-grey{
+  opacity: 0.4;
+}
+.heading-of-project{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.item-left{
+  display: flex;
+  justify-content: space-between;
+}
+.pledge{
+  color:hsl(176, 50%, 47%);
+  font-weight: bold;
+}
+.name-of-project{
+  font-weight: bold;
+  font-size: 18px;
+}
+.item-left{
+  margin-top:20px;
+}
+.num-items-left{
+  font-size: 30px;
+}
+.select-reward{
+  background:  hsl(176, 50%, 47%);
+  color:white;
+   /* we want to round the corners of the button */
+  border-radius: 50px;
+  width:160px;
+  height:40px;
+  border:0;
+}
+.select-reward-grey{
+  background:grey;
+  color:white;
+   /* we want to round the corners of the button */
+  border-radius: 50px;
+  width:160px;
+  height:40px;
+}
+#back-this-project-button:hover,.select-reward:hover{
+  background-color: hsl(176, 72%, 28%);
+}
+#bookmark{
+  cursor: pointer;
+}
+#bookmark-text{
+  display: inline;
+}
+
+/* content-two */
+#content-two{
+  width: 650px;
+  background: white;
+  border-radius: 10px;
+  padding:30px 50px 50px 50px;
+  /* this element is positioned at the center relative to
+  the parent, which is body element */
+  position: absolute;
+  left: 50%;
+  top:25%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+#close-button{
+  position: absolute;
+  right:0;
+  cursor: pointer;
+}
+#back-this-project{
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+}
+#close-button-parent{
+  position: relative;
+  height: 20px;
+}
+.modal-item{
+  display: flex;
+  margin-top:15px;
+  justify-content: space-between;
+  border:1px solid grey;
+  /* top and button padding are 20px and bottom padding is 10px */
+  padding:20px 20px;
+}
+.modal-item-body{
+  width:450px;
+}
+.radio-button{
+  height:30px;
+  width:20px;
+  cursor: pointer;
+  margin-right:20px;
+}
+.modal-item-title{
+  font-weight: bold;
+}
+.modal-item-title:hover{
+  color:hsl(176, 50%, 47%);
+}
+.modal-item-heading{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.pledge-coupon{
+  color:hsl(176, 50%, 47%);
+  font-weight: bold;
+}
+.selected-pledge{
+  /* when an input gets clicked, the required plege will display flex */
+  display: none;
+  justify-content:space-around;
+  border:3px solid hsl(176, 50%, 47%);
+  padding-bottom: 20px;
+  padding-top:20px;
+  border-top:0;
+}
+
+#input-pledge-amount{
+  width: 80px;
+  border-radius: 30px;
+  height: 35px;
+
+}
+.grey-text{
+  color:grey;
+}
+
+input[type= "number"]::placeholder{
+  /* centering the placeholder text */
+  text-align: center;
+}
+.continue-button{
+  width: 104px;
+  height: 44px;
+  border-radius: 50px;
+  color:white;
+  font-weight: bold;
+  background:  hsl(176, 50%, 47%);
+  border: 0;
+}
+.continue-button:hover{
+  background: hsl(176, 72%, 28%);
+}
+
+/* completed-page */
+#completed-page{
+  width:400px;
+  padding:50px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top:55%;
+  /* transfrom translate positions the element in the left and right axis */
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+#completed-text{
+  margin-bottom: 20px;
+}
+#completed-heading{
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+#got-it-button{
+  width: 94px;
+  height: 44px;
+  border-radius: 50px;
+  color: white;
+  background:  hsl(176, 50%, 47%);
+  border:0;
+}
+
+/* media querries */
+@media(max-width:780px){
+
+  #price-section, #projects{
+    width:100%;
+    position: static;
+    /* reseting the transform */
+    transform:none;
+  }
+  #items{
+    width:100%;
+    position: static;
+    transform: translate(0px, -50px);
+  }
+
+  #price-section{
+    margin-bottom: 50px;
+  }
+  #projects, #price-section{
+    text-align: center;
+  }
+  #content{
+    /* we want the browser to calculate the height in smaller screens */
+    height:auto;
+  }
+
+  .modal-item{
+    position:relative;
+    height:232px;
+    /* the browser calculates the height for us */
+    height: auto;
+  }
+
+}
+@media(max-width:510px){
+
+
+  #prices{
+    display: block;
+  }
+  #price-section{
+    height: auto;
+  }
+  #content-two{
+    width: 100%;
+    top:30%;
+  }
+}
+
+@media(max-width:470px){
+  #button-bookmark{
+    display: block;
+  }
+  #back-this-project-button, #bookmark{
+    /* only block elements can be centered */
+    display: block;
+    margin:0 auto;
+  }
+  #bookmark{
+    margin-top:20px;
+  }
+  .modal-item-heading{
+    flex-direction: column;
+  }
+  .modal-item{
+    display: block;
+    height: 302px;
+  }
+  .modal-item-body{
+    width:100%;
+  }
+  .modal-item-heading, .first-pledge{
+    position: absolute;
+    top:10px;
+    left:60px;
+  }
+  .modal-items-left{
+    position: absolute;
+    left:-40px;
+    top:240px;
+  }
+  .style-text{
+    position: absolute;
+    top:90px;
+    font-size: 15px;
+  }
+
+}
+
+/* styling item-left */
+@media(max-width:406px){
+  .item-left{
+    display: block;
+  }
+  .select-reward{
+    margin-top:20px;
+  }
+}
+
+@media(max-width:500px){
+  #completed-page{
+    /* 80% of its parent in smaller screens */
+    width:80%;
+  }
+}
